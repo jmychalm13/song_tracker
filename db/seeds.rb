@@ -1,7 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "Seeding started"
+
+song = Song.new({ title: "Wish You Were Here", artist: "Pink Floyd", album: "Wish You Were Here", year: 1975 })
+song.save
+
+song = Song.new({ title: "No Quarter", artist: "Led Zeppelin", album: "Houses of the Holy", year: 1973 })
+song.save
+
+song = Song.new({ title: "What I Got", artist: "Sublime", album: "40oz to Freedom", year: 1996 })
+song.save
+
+song = Song.new({ title: "Love I'm Given", artist: "Ellie Goulding", album: "Brightest Blue", year: 2020 })
+song.save
+
+puts "Seeding complete"

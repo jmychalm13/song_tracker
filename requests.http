@@ -1,4 +1,12 @@
 GET http://localhost:3000/songs.json
 
-### show individual song
-GET http://localhost:3000/songs/1.json
+### create
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "another song",
+  "artist": "another artist",
+  "year": 100,
+  "album": "an album"
+}
